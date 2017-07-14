@@ -94,10 +94,6 @@ function customerStart() {
 			})
 		});
 	});
-
-
-
-
 }
 
 function managerStart(){
