@@ -22,3 +22,61 @@ INSERT INTO departments (department_name, over_head_costs) VALUES ('Department 2
 INSERT INTO departments (department_name, over_head_costs) VALUES ('Department 3', 3.75);
 INSERT INTO departments (department_name, over_head_costs) VALUES ('Department 4', 1.25);
 
+--Check inventory
+SELECT
+    stock_quantity
+FROM products
+WHERE 0=0
+and item_id = 
+
+--Update Inventory
+UPDATE products
+SET stock_quantity = 
+WHERE 0=0
+and item_id = 
+
+--Manager Reports
+
+--View Products
+SELECT 
+    item_id as 'Item ID'
+    ,product_name as 'Product Name'
+    ,price as 'Price'
+    ,stock_quantity as 'Quantity'
+FROM products
+WHERE 0=0
+ORDER BY item_id
+
+--View Low Inventory
+SELECT 
+    item_id as 'Item ID'
+    ,product_name as 'Product Name'
+    ,price as 'Price'
+    ,stock_quantity as 'Quantity'
+FROM products
+WHERE 0=0
+AND quantity <= 5
+ORDER BY item_id
+
+--Update quantity
+UPDATE products
+SET stock_quantity = 
+WHERE 0=0
+and item_id = 
+
+--Add New Item
+INSERT INTO products (
+    product_name, 
+    department_name,
+    price, 
+    stock_quantity)
+VALUES (
+    'Item 4', 
+    'Department 2', 
+    '13', 
+    '223'
+);
+
+--Departments
+ALTER TABLE products
+ADD product_sales decimal(11,2)
